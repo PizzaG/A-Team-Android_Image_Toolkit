@@ -1,0 +1,7 @@
+{
+  "version": "5",
+  "display": "1.5",
+  "file": "A-Team-Android_Image_Toolkit-v1.5.7z",
+  "changelog": "- Fixed updater version handling: version is now the integer machine release code while display remains the human-facing version.\n- Added a metadata consistency guard so a mismatched/stale record (for example version=16 with display=1.4) can never be offered as an update over installed v1.5.\n- Fixed update detection so a stale Forgejo v1.4 metadata record can never cause v1.5 to offer a downgrade; the updater now checks both sources and selects only the highest version newer than the installed release.\n- Module 01 now selects the sparse-chunk folder on Linux and Windows and discovers chunk files without shell globbing.\n- Update checking uses a separate popup window instead of rendering in the module pane.\n- Updater restored to the single Updates/version.json format with Forgejo primary and GitHub fallback.\n- Removed DEB/EXE package update handling; updates use the single .7z archive format.\n- Consolidated shared image-processing binaries into platform-tools/<platform>/ and updated module resolution so Linux and Windows use the canonical copies.\n- Public Release v1.5",
+  "sha256": ""
+}
